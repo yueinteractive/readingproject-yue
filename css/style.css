@@ -281,8 +281,8 @@ background-color: lightyellow;
 	display: inline-block;
 	vertical-align: top;
 	position:relative;
-	border-top-left-radius: 5% 5%;
-	border-top-right-radius: 5% 5%;
+	border-top-left-radius: 36px;
+	border-top-right-radius: 36px;
 	-moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
 	-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
 	box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
@@ -302,6 +302,9 @@ background-color: lightyellow;
 	margin: 40px 0 40px 0;
 	overflow: hidden;
 
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+
 	-webkit-transition:width 0.6s ease-out, opacity 0.6s;
 	-moz-transition:width 0.6s ease-out, opacity 0.6s;
 	-o-transition:width 0.6s ease-out, opacity 0.6s;
@@ -311,11 +314,9 @@ background-color: lightyellow;
 }
 
 .individualPanelContent.expanded{
-	border-top-left-radius: 2% 4%;
-	border-top-right-radius: 2% 4%;
 	width: 800px;
 	margin-right: 50px;
-	opacity: 0.8;
+	opacity: 0.8 !important;
 }
 
 
@@ -325,8 +326,8 @@ background-color: lightyellow;
 	padding: 14px;
 	color: white;
 	overflow: hidden;
-	border-top-left-radius: 5% 26%;
-	border-top-right-radius: 5% 26%;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
 }
 
 .pannelHeader p{
