@@ -20,6 +20,7 @@ panels.each(function(panelIndex, panel) {
 			if(!hasExpanded) {
 				$(panelContent).addClass('expanded');
 				panelOffsetX = - 400 * buttonIndex;
+				$(".circle_btn").addClass("rotationArrow");
 			//The animation I just created isnt as fluent as expectation.. just mark here
 				$(this).parent().prevAll().css('visibility', 'hidden');
 				$(this).parent().next().nextAll().css('visibility', 'hidden');
@@ -27,6 +28,7 @@ panels.each(function(panelIndex, panel) {
 				panelOffsetX = 0;
 				$(this).parent().prevAll().css('visibility', 'visible');
 				$(this).parent().next().nextAll().css('visibility', 'visible');
+				$(".circle_btn").removeClass("rotationArrow");
 			}
 
 			$(panelContainer).css('left', panelOffsetX + 'px');
