@@ -235,16 +235,20 @@ background-color: lightyellow;
 	position: relative;;
 }
 
+.panel{
+	text-align: center;
+	overflow: hidden;
+}
+
 .individualpannel{
 	font-family: 'Lato', Times, 'Times New Roman', serif;
-	top:-40px;
 	width: 320px;
 	height: 380px;
+	margin: 40px;
 	background-color: white;
-	float: left;
-	left: 5%;
+	display: inline-block;
+	vertical-align: top;
 	position:relative;
-	margin-left: 7%;
 	border-top-left-radius: 5% 5%;
 	border-top-right-radius: 5% 5%;
 	-moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
@@ -253,8 +257,8 @@ background-color: lightyellow;
 	font-family:sans-serif;
 }
 
-
 .pannelHeader{
+	font-size: 20px;
 	text-align: center;
 	padding: 14px;
 	color: white;
@@ -263,14 +267,27 @@ background-color: lightyellow;
 	border-top-right-radius: 5% 26%;
 }
 
+.pannelHeader p{
+	font-size: 14px;
+}
+
 .pannelContext{
 	padding: 20px;
 	color:gray;
 	line-height: 20px;
+	text-align: left;
 }
 
-#pannelHeader1,#circle_btn1{
+.color1{
 	background-color: #8ec041;
+}
+
+.color2{
+	background-color: #58bc80;
+}
+
+.color3{
+	background-color: #53b2c9;
 }
 
 .moveLeft{
@@ -309,23 +326,10 @@ background-color: lightyellow;
     transition:all .5s linear;
 }
 
-#pannelHeader2,#circle_btn2{
-	background-color: #58bc80;
-}
-
-#pannelHeader3,#circle_btn3{
-	background-color: #53b2c9;
-}
-
-#pannelHeader1 h2,#pannelHeader2 h2,#pannelHeader3 h2{
-	font-size: 20px;
-}
-#pannelHeader1 p,#pannelHeader2 p,#pannelHeader3 p{
-	font-size: 14px;
-}
-
 .circle_btn{
-	background: url("../images/arrow.png") no-repeat center center transparent; 
+	background-image: url("../images/arrow.png");
+	background-repeat: no-repeat;
+	background-position: center; 
 	bottom:20px;
 	right:0px;
 	border-radius: 50%;
@@ -340,7 +344,7 @@ background-color: lightyellow;
 
 }
 
-#circle_btn1:hover,#circle_btn2:hover,#circle_btn3:hover{
+.circle_btn:hover{
 	background-color: #fea072;
 }
 
