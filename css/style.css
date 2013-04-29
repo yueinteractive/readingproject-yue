@@ -307,7 +307,8 @@ background-color: lightyellow;
 }
 
 .individualPanelContent.expanded{
-	width: 640px;
+	width: 800px;
+	margin-right: 50px;
 }
 
 
