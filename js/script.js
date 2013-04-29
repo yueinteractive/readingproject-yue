@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	    $('#top-menu li a').on('click', function(){
+	    	$(this).addClass('active').parent().siblings().find('a').removeClass('active');
+        });
+
     	$(function() {
     // find each section with id
 		$("#homenav").bind('click', { id: '#home' }, scroller);
@@ -44,6 +48,7 @@ $(document).ready(function(){
 			// Move the background, set the css position 
 			$bgobj.css({ backgroundPosition: coords });
 
+<<<<<<< HEAD
 
 
 	  		//if (yPos<1000){
@@ -54,6 +59,12 @@ $(document).ready(function(){
 
 		
 		}); // window scroll Ends
+=======
+			// stylize top menu
+			if($(window).height() < $window.scrollTop()) $('#top-menu').addClass('shortened');
+			else $('#top-menu').removeClass('shortened');
+		});
+>>>>>>> fb42c9313429b898f6ac098ace678d8560d028d9
  	});
 }); 
 
