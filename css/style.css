@@ -23,10 +23,27 @@ body{
 	background-image: -moz-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 100%);
 	background-image: -webkit-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 100%);
 	background-image: -ms-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 100%);
+
+	opacity: 1;
+
+	-webkit-transition:height 1s, opacity 1s;
+	-moz-transition:height 1s, opacity 1s;
+	-o-transition:height 1s, opacity 1s;
+	transition:height 1s, opacity 1s;
+}
+
+#top-menu.shortened{
+	height: 34px;
+	opacity: .95;
+}
+
+#top-menu.shortened #logo{
+	background-size: auto 60%;
 }
 
 #top-menu ul{
 	text-align: center;
+	height: 100%;
 }
 
 #top-menu ul li{
@@ -63,10 +80,10 @@ body{
 
 #logo{
 	background: url(../images/logo3.png) no-repeat center;
-	background-size: auto 85%;
+	background-size: auto 86%;
 	min-width: 100px;
 	width: 15%;
-	height: 68px;
+	height: 100%;
 	margin: 0 !important;
 	padding: 0 !important;
 }

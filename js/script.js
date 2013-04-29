@@ -43,7 +43,10 @@ $(document).ready(function(){
 			// Move the background, set the css position 
 			$bgobj.css({ backgroundPosition: coords });
 		
-		}); // window scroll Ends
+			// stylize top menu
+			if(yPos < 0) $('#top-menu').addClass('shortened');
+			else $('#top-menu').removeClass('shortened');
+		});
  	});
 }); 
 
