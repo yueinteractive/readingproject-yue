@@ -42,9 +42,9 @@ $(document).ready(function(){
 
 			// Move the background, set the css position 
 			$bgobj.css({ backgroundPosition: coords });
-		
+
 			// stylize top menu
-			if(yPos < 0) $('#top-menu').addClass('shortened');
+			if($(window).height() < $window.scrollTop()) $('#top-menu').addClass('shortened');
 			else $('#top-menu').removeClass('shortened');
 		});
  	});
