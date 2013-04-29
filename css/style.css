@@ -1,0 +1,361 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Lato', Times, 'Times New Roman', serif;
+	overflow: hidden;
+}
+
+/* Style for navigation*/
+nav{
+	margin-left: 8%;
+	z-index: 1000;
+	position: fixed;
+	height: 68px;
+	width: 100%;
+	box-shadow: 0 0 50px rgba(0,0,0,0.3);
+	background-image: linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 79%);
+	background-image: -o-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 79%);
+	background-image: -moz-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 79%);
+	background-image: -webkit-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 79%);
+	background-image: -ms-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 79%);
+	font-family:sans-serif;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(214,214,214)),
+		color-stop(0.79, rgb(247,247,247))
+	);
+}
+
+#adj{
+	margin-left: 250px;
+}
+nav ul{
+	margin-left: 400px;
+	text-align: center;;
+}
+
+nav ul li{
+	float: left;
+	margin-left: 8%;
+	margin-top: 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 6px 6px 4px 6px;
+	cursor: pointer;
+	color: gray;
+	text-align: center;
+}
+
+nav ul li:hover{
+	background-color: #fea072;
+	color: white;
+	border-radius: 8px;
+}
+
+.active{
+	background-color: #fea072;
+	color: white;
+	border-radius: 8px;
+}
+
+#logo{
+	background: url(../images/logo3.png) no-repeat; 
+	width: 160px;
+	height: 60px;
+	float: left;
+	left: 140px;
+	top: 3px;
+	position: fixed;
+	z-index: 1002;
+}
+
+/* Here are the main bock of every section*/
+#home { 
+	background: url(../images/home.jpg) 100% 0 no-repeat fixed; 
+	height: 1000px;  
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+
+#plan { 
+	background: url(../images/plan.png) 100% 10% no-repeat fixed; 
+	background-color: #f7f7f7;
+	height: 1000px;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+#do { 
+	background: url(../images/home.jpg) 100% 0 no-repeat fixed; 
+	height: 1000px;  
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+#review { 
+	background: url(../images/reviewbg.png) 100% 10% no-repeat fixed; 
+	height: 1000px;  
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+#feedback { 
+	background: url(../images/home.jpg) 100% 0 no-repeat fixed; 
+	height: 1000px;  
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+/* Introduction of certain parts */
+
+#home article { 
+	background: url("../images/intro.png") no-repeat scroll center top transparent; 
+	height: 458px; 
+	position: relative; 
+	text-indent: -9999px; 
+	top: 291px; width: 100%; 
+}
+
+
+#plan article { 
+	background: url("../images/plantext.png") no-repeat scroll top right transparent; 
+	height: 458px; 
+	position: relative; 
+	text-indent: -9999px; 
+	right: 10%;
+	top: 191px; 
+	width: 100%; 
+}
+
+#do article { 
+	background: url("../images/dotext.png") no-repeat scroll center top transparent; 
+	height: 458px; 
+	position: relative; 
+	text-indent: -9999px; 
+	top: 151px; 
+	left: 100px;
+	width: 100%; 
+}
+
+#review article { 
+	background: url("../images/reviewText.png") no-repeat scroll top right transparent; 
+	height: 458px; 
+	position: relative; 
+	text-indent: -9999px; 
+	left: -50px;
+	top: 151px; width: 100%; 
+}
+
+#feedback article { 
+	background: url("../images/feedbackText.png") no-repeat scroll center top transparent; 
+	height: 458px; 
+	position: relative; 
+	text-indent: -9999px; 
+	top: 246px; width: 100%; 
+}
+
+
+textarea{
+	position: relative;
+	left: 30%;
+	top: 150px;
+	width: 300px;
+	height: 20px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	opacity: .40; 
+	/* Standard opacity property */
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* IE opacity property */
+    /* reducing the opacity will also make the textarea text become transparent */
+}
+
+#textarea2{
+	position: relative;
+	left: 20%;
+	top: 100px;
+	width: 500px;
+	height: 200px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	opacity: .40; 
+	/* Standard opacity property */
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* IE opacity property */
+    /* reducing the opacity will also make the textarea text become transparent */
+}
+
+
+textarea:focus{
+background-color: lightyellow;
+}
+
+#submit_button{
+	float: left;
+	position: relative;
+	left: 64%;
+	top:150px;
+	color: red;
+	font-size: 18px;
+	background-color: white;
+	color: gray;
+	opacity: .10; 
+	padding: 6px 10px 4px 10px;
+	border-radius: 6px;
+	cursor: pointer;
+
+}
+
+#submit_button:hover{
+	background-color: #fea072;
+	opacity: 1;
+	color: white;
+	position: relative;;
+}
+
+.individualpannel{
+	font-family: 'Lato', Times, 'Times New Roman', serif;
+	top:-40px;
+	width: 320px;
+	height: 380px;
+	background-color: white;
+	float: left;
+	left: 5%;
+	position:relative;
+	margin-left: 7%;
+	border-top-left-radius: 5% 5%;
+	border-top-right-radius: 5% 5%;
+	-moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+	font-family:sans-serif;
+}
+
+
+.pannelHeader{
+	text-align: center;
+	padding: 14px;
+	color: white;
+	overflow: hidden;
+	border-top-left-radius: 5% 26%;
+	border-top-right-radius: 5% 26%;
+}
+
+.pannelContext{
+	padding: 20px;
+	color:gray;
+	line-height: 20px;
+}
+
+#pannelHeader1,#circle_btn1{
+	background-color: #8ec041;
+}
+
+.moveLeft{
+	left: -1000px;
+    -webkit-transition:all .5s linear;
+    -moz-transition:all .5s linear;
+    -o-transition:all .5s linear;
+    -ms-transition:all .5s linear;    
+    transition:all .5s linear;
+}
+.moveRight{
+	left: 1000px;
+    -webkit-transition:all .5s linear;
+    -moz-transition:all .5s linear;
+    -o-transition:all .5s linear;
+    -ms-transition:all .5s linear;    
+    transition:all .5s linear;
+}
+
+.individualpannel.move, #circle_btn1.move{
+    left: -600px;
+    -webkit-transition:all .5s linear;
+    -moz-transition:all .5s linear;
+    -o-transition:all .5s linear;
+    -ms-transition:all .5s linear;    
+    transition:all .5s linear;
+}
+
+
+#plan article.move{
+    top: -600px;
+    -webkit-transition:all .5s linear;
+    -moz-transition:all .5s linear;
+    -o-transition:all .5s linear;
+    -ms-transition:all .5s linear;    
+    transition:all .5s linear;
+}
+
+#pannelHeader2,#circle_btn2{
+	background-color: #58bc80;
+}
+
+#pannelHeader3,#circle_btn3{
+	background-color: #53b2c9;
+}
+
+#pannelHeader1 h2,#pannelHeader2 h2,#pannelHeader3 h2{
+	font-size: 20px;
+}
+#pannelHeader1 p,#pannelHeader2 p,#pannelHeader3 p{
+	font-size: 14px;
+}
+
+.circle_btn{
+	background: url("../images/arrow.png") no-repeat center center transparent; 
+	bottom:20px;
+	right:0px;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	float: right;
+	padding: 20px;
+	margin-right: 30px;
+	color: white;
+	cursor: pointer;	
+
+}
+
+#circle_btn1:hover,#circle_btn2:hover,#circle_btn3:hover{
+	background-color: #fea072;
+}
+
+
+
+.circle_btn>p{
+	position: relative;
+	margin-right: 10px;
+}
+
+/* For some reason, I cannot preset the h2 tag, so I need to assign them seperately*/
+h2{
+	font-size: 20px;
+}
+p{
+	font-size: 10px;
+}
+

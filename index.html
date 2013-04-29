@@ -1,0 +1,315 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>RIT Reading Project</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="js/script.js"></script>
+		<script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js/greensock/plugins/ScrollToPlugin.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <script src="js/modernizr.custom.js"></script>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/component2.css" />
+
+
+	</head>
+
+	<body>
+		<!-- Fixed Navigation Bar -->
+		<div id="logo">
+		</div>
+
+		<nav>
+			<div id="adj">
+			<ul>
+				<li href="#" id="homenav">Home</li>
+				<li href="#" id="plannav">Plan</li>
+				<li href="#" id="donav">Do</li>
+				<li href="#" id="reviewnav">Review</li>
+        <li href="#" id="feedbacknav">Feedback</li>
+			</ul>
+      <script>
+        $('#adj li').on('click', function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+
+
+        // Cache selectors
+var lastId,
+    topMenu = $("#top-menu"),
+    topMenuHeight = topMenu.outerHeight()+15,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+  var href = $(this).attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+  $('html, body').stop().animate({ 
+      scrollTop: offsetTop
+  }, 300);
+  e.preventDefault();
+});
+      </script>
+
+			</div>
+			
+		</nav>
+
+		<!-- Section #1 Home-->
+		<section id="home" data-speed="10" data-type="background">
+  			<article></article>
+			<textarea name="styled-textarea" id="styled" onfocus="this.value=''; setbg('#e5fff3');" onblur="setbg('white')" >Enter your RIT email...</textarea>
+			<div id="submit_button" id="join"> Join </div>
+			<div id="circle_menu"></div>
+
+
+		</section>
+		
+		<!-- Section #2 Plan-->
+		<section id="plan" data-speed="2.8" data-type="background">
+  			<article></article>
+  			<div id="pannel" data-speed="4" data-type="background" >
+  				<div class="individualpannel">
+  					<div id="pannelHeader1" class="pannelHeader">
+  						<h2>Vocabulary</h2>
+  						<p>Sed ut perspiciatis unde omnis iste</p>
+  					</div>
+  					<div class="pannelContext">
+  						<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, consequuntur magni dolores eos qui ratione voluptatem sequi nesciuntsed quia. Neque porro quisquam est, qui dolorem consectetur, adipisci velit ipsum quia dolor sit amet, sed quia non numquam eius modi tempora. </p>
+  					</div>
+  					<div class="circle_btn" id="circle_btn1">
+  					</div>
+  				</div>
+
+
+  				<div class="individualpannel">
+  					<div id="pannelHeader2" class="pannelHeader">
+  						<h2>Materials</h2>
+  						<p>Voluptatem accusantium doloremque</p>
+  					</div>
+					  <div class="pannelContext">
+  						<p> Tempora incidunt ut labore quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci quis nostrum. </p>
+  					</div>
+  					<div class="circle_btn" id="circle_btn2">
+  					</div>
+  				</div>
+
+
+
+  				<div class="individualpannel">
+  					<div id="pannelHeader3" class="pannelHeader">
+  						<h2>Preparation</h2>
+  						<p>Sed quia consequuntur magni dolores</p>
+  					</div>
+  					<div class="pannelContext">
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur </p>
+  					</div>
+  					 <div class="circle_btn" id="circle_btn3">
+  					</div>
+  				</div>
+
+  			</div>
+        
+		</section>
+
+    <script>
+    $(document).ready(function() {
+        $('.circle_btn').on('click', function() {
+            //$(this).parent().addClass('move');
+            $(this).parent().prevAll().addClass('moveLeft');
+            $(this).parent().nextAll().addClass('moveRight');
+        });
+    });
+
+
+
+
+
+
+
+    </script>
+
+
+		<!-- Section #3 Do-->
+    <section id="do" data-speed="2.4" data-type="background">
+        <article></article>
+      <div class="main">
+        <ul id="bk-list" class="bk-list clearfix">
+          <li>
+            <div class="bk-book book-1">
+              <div class="bk-front">
+                <div class="bk-cover">
+                  <h2>
+                    <span>Anthony Burghiss</span>
+                  </h2>
+                </div>
+                <div class="bk-cover-back"></div>
+              </div>
+              <div class="bk-page">
+                <div class="bk-content bk-content-current">
+                  <p>Red snapper Kafue pike fangtooth humums slipmouth, salmon cutlassfish; swallower European perch mola mola sunfish, threadfin bream. Billfish hog sucker trout-perch lenok orbicular velvetfish. Delta smelt striped bass, medusafish dragon goby starry flounder cuchia round whitefish northern anchovy spadefish merluccid hake cat shark Black pickerel. Pacific cod.</p>
+                </div>
+                <div class="bk-content">
+                  <p>Whale catfish leatherjacket deep sea anglerfish grenadier sawfish pompano dolphinfish carp large-eye bream, squeaker amago. Sandroller; rough scad, tiger shovelnose catfish snubnose parasitic eel? Black bass soldierfish duckbill--Rattail Atlantic saury Blind shark California halibut; false trevally warty angler!</p>
+                </div>
+                <div class="bk-content">
+                  <p>Trahira giant wels cutlassfish snapper koi blackchin mummichog mustard eel rock bass whiff murray cod. Bigmouth buffalo ling cod giant wels, sauger pink salmon. Clingfish luderick treefish flatfish Cherubfish oldwife Indian mul gizzard shad hagfish zebra danio. Butterfly ray lizardfish ponyfish muskellunge Long-finned sand diver mullet swordfish limia ghost carp filefish.</p>
+                </div>
+              </div>
+              <div class="bk-back">
+                <p>In this nightmare vision of cats in revolt, fifteen-year-old Alex and his friends set out on a diabolical orgy of robbery, rape, torture and murder. Alex is jailed for his teenage delinquency and the State tries to reform him - but at what cost?</p>
+              </div>
+              <div class="bk-right"></div>
+              <div class="bk-left">
+                <h2>
+                  <span>Anthony Burghiss</span>
+                  
+                </h2>
+              </div>
+              <div class="bk-top"></div>
+              <div class="bk-bottom"></div>
+            </div>
+          </li>
+          <li>
+            <div class="bk-book book-3">
+              <div class="bk-front">
+                <div class="bk-cover">
+                  <h2>
+                    <span>The Catfather</span>
+                    <span>Mario Purrzo</span>
+                  </h2>
+                </div>
+                <div class="bk-cover-back"></div>
+              </div>
+              <div class="bk-page">
+                <div class="bk-content">
+                  <p>Whale catfish leatherjacket deep sea anglerfish grenadier sawfish pompano dolphinfish carp large-eye bream, squeaker amago. Sandroller; rough scad, tiger shovelnose catfish snubnose parasitic eel? Black bass soldierfish duckbill--Rattail Atlantic saury Blind shark California halibut; false trevally warty angler!</p>
+                </div>
+                <div class="bk-content">
+                  <p>Trahira giant wels cutlassfish snapper koi blackchin mummichog mustard eel rock bass whiff murray cod. Bigmouth buffalo ling cod giant wels, sauger pink salmon. Clingfish luderick treefish flatfish Cherubfish oldwife Indian mul gizzard shad hagfish zebra danio. Butterfly ray lizardfish ponyfish muskellunge Long-finned sand diver mullet swordfish limia ghost carp filefish.</p>
+                </div>
+                <div class="bk-content bk-content-current">
+                  <p>Red snapper Kafue pike fangtooth humums's slipmouth, salmon cutlassfish; swallower European perch mola mola sunfish, threadfin bream. Billfish hog sucker trout-perch lenok orbicular velvetfish. Delta smelt striped bass, medusafish dragon goby starry flounder cuchia round whitefish northern anchovy spadefish merluccid hake cat shark Black pickerel. Pacific cod.</p>
+                </div>
+              </div>
+              <div class="bk-back">
+                <p>Tyrant, blackmailer, racketeer, murderer - his influence reaches every level of American society. Meet Cat Corleone, a friendly cat, a just cat, a reasonable cat. The deadliest lord of the Cata Nostra. The Catfather.</p>
+              </div>
+              <div class="bk-right"></div>
+              <div class="bk-left">
+                <h2>
+                  <span>Textbook</span>
+                  
+                </h2>
+              </div>
+              <div class="bk-top"></div>
+              <div class="bk-bottom"></div>
+            </div>
+          </li>
+        </ul>
+        <div class="bookshelf"></div>
+      </div>
+    </div><!-- /container -->
+    <script src="js/books2.js"></script>
+    <script>
+      $(function() {
+
+        Books.init();
+
+      });
+    </script>
+		</section>
+		<!-- Section #4 Review-->
+		<section id="review" data-speed="7.2" data-type="background">
+  			<article></article>
+
+        <div id="pannel" data-speed="4" data-type="background" >
+
+          <div class="individualpannel">
+            <div id="pannelHeader1" class="pannelHeader">
+              <h2>Vocabulary</h2>
+              <p>Sed ut perspiciatis unde omnis iste</p>
+            </div>
+            <div class="pannelContext">
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, consequuntur magni dolores eos qui ratione voluptatem sequi nesciuntsed quia. Neque porro quisquam est, qui dolorem consectetur, adipisci velit ipsum quia dolor sit amet, sed quia non numquam eius modi tempora. </p>
+            </div>
+            <div class="circle_btn" id="circle_btn1">
+            </div>
+          </div>
+
+
+          <div class="individualpannel">
+             <div id="pannelHeader2" class="pannelHeader">
+              <h2>Materials</h2>
+              <p>Voluptatem accusantium doloremque</p>
+            </div>
+            <div class="pannelContext">
+              <p> Tempora incidunt ut labore quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci quis nostrum. </p>
+            </div>
+            <div class="circle_btn" id="circle_btn2">
+            </div>
+          </div>
+
+
+
+          <div class="individualpannel">
+            <div id="pannelHeader3" class="pannelHeader">
+              <h2>Preparation</h2>
+              <p>Sed quia consequuntur magni dolores</p>
+            </div>
+            <div class="pannelContext">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur </p>
+            </div>
+            <div class="circle_btn" id="circle_btn3">
+            </div>
+          </div>
+
+        </div>
+
+		</section>
+
+
+<!-- Section #5 Feedback-->
+    <section id="feedback" data-speed="14" data-type="background">
+        <article></article>
+          <textarea id="textarea2" name="styled-textarea" id="styled" onfocus="this.value=''; setbg('#e5fff3');" onblur="setbg('white')" >Do you want to talk？</textarea>
+      <div id="submit_button" id="join"> Submit </div>
+      <div id="circle_menu"></div>
+    </section>
+
+	</body>
+	<script language="JavaScript" type="text/javascript">
+
+
+  </script>
+  
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17739739-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</html>
