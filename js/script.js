@@ -13,9 +13,14 @@ $(document).ready(function(){
 	  		event.preventDefault();
 	  		TweenLite.to(window, 2, {scrollTo:{y:scrollYPos, x:0}, ease:Power4.easeOut})
 	  };
+
+
+
 	});
 	// Cache the Window object
 	$window = $(window);
+
+
 
 	// find each section with the data-type of "background"
 	// for each section found add this function
@@ -38,6 +43,15 @@ $(document).ready(function(){
 
 			// Move the background, set the css position 
 			$bgobj.css({ backgroundPosition: coords });
+
+
+
+	  		//if (yPos<1000){
+	  			//$("#homenav").addClass('active');
+	  		//}else(yPos<2000&&scrollYPos>1000){
+				//$("#plannav").addClass('active');
+	  		//}
+
 		
 		}); // window scroll Ends
  	});
