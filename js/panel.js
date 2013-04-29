@@ -16,10 +16,11 @@ panels.each(function(panelIndex, panel) {
 			var hasExpanded = $(panelContent).hasClass('expanded');
 			panelContents.removeClass('expanded');
 
-
+			//can I use toggle here?
 			if(!hasExpanded) {
 				$(panelContent).addClass('expanded');
 				panelOffsetX = - 400 * buttonIndex;
+			//The animation I just created isnt as fluent as expectation.. just mark here
 				$(this).parent().prevAll().css('visibility', 'hidden');
 				$(this).parent().next().nextAll().css('visibility', 'hidden');
 			}else{
