@@ -262,6 +262,7 @@ background-color: lightyellow;
 
 .panel{
 	overflow: hidden;
+	margin-top: -100px;
 }
 
 .panelContainer{
