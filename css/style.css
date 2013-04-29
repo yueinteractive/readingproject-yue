@@ -212,7 +212,7 @@ textarea:focus{
 background-color: lightyellow;
 }
 
-#submit_button{
+.submit_button{
 	float: left;
 	position: relative;
 	left: 64%;
@@ -228,11 +228,15 @@ background-color: lightyellow;
 
 }
 
-#submit_button:hover{
+.submit_button:hover{
 	background-color: #fea072;
 	opacity: 1;
 	color: white;
 	position: relative;;
+}
+#submit{
+  position: relative;
+  top: 100px
 }
 
 .individualpannel{
