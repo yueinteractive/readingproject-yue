@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	    $('#top-menu li a').on('click', function(){
+	    	$(this).addClass('active').parent().siblings().find('a').removeClass('active');
+        });
+
     	$(function() {
     // find each section with id
 		$("#homenav").bind('click', { id: '#home' }, scroller);

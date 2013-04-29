@@ -6,44 +6,50 @@ body{
 }
 
 /* Style for navigation*/
-#top-nav{
+#top-menu{
 	z-index: 1000;
 	position: fixed;
 	height: 68px;
 	width: 100%;
 	box-shadow: 0 0 50px rgba(0,0,0,0.3);
+
+	font-family:sans-serif;
+	-moz-user-select: none;
+ 	-webkit-user-select: none;
+  	-ms-user-select: none;
+
 	background-image: linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 100%);
 	background-image: -moz-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 100%);
 	background-image: -webkit-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 100%);
 	background-image: -ms-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 100%);
-	font-family:sans-serif;
-	background-image: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		color-stop(1.0, rgb(214,214,214)),
-		color-stop(0.0, rgb(247,247,247))
-	);
 }
 
-#top-nav ul{
+#top-menu ul{
 	text-align: center;
 }
 
-#top-nav ul li{
+#top-menu ul li{
 	display: inline-block;
 	vertical-align: middle;
-	margin: 0 3% 0 3%;
+	padding: 0 3% 0 3%;
+	border-right: 1px dotted #bbb;
+	text-align: center;
+}
+
+#top-menu ul li:first-child, #top-menu ul li:last-child{
+	border-right: none;
+}
+
+#top-menu ul li a{
 	padding: 2px 8px 2px 8px;
 	font-size: 16px;
 	text-transform: uppercase;
 	cursor: pointer;
 	color: gray;
-	text-align: center;
 }
 
-#top-nav ul li:hover{
+#top-menu ul li a:hover{
 	background-color: #fea072;
 	color: white;
 	border-radius: 6px;
@@ -51,7 +57,7 @@ body{
 
 .active{
 	background-color: #fea072;
-	color: white;
+	color: white !important;
 	border-radius: 6px;
 }
 
@@ -61,6 +67,10 @@ body{
 	height: 68px;
 	margin: 0 !important;
 	padding: 0 !important;
+}
+
+#logo:hover{
+	background-color: transparent !important;
 }
 
 /* Here are the main bock of every section*/
