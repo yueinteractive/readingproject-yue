@@ -240,8 +240,17 @@ background-color: lightyellow;
 }
 
 .panel{
-	text-align: center;
 	overflow: hidden;
+}
+
+.panelContainer{
+	position: relative;
+	text-align: center;
+	white-space: nowrap;
+	-webkit-transition:left 0.6s ease-out;
+	-moz-transition:left 0.6s ease-out;
+	-o-transition:left 0.6s ease-out;
+	transition:left 0.6s ease-out;
 }
 
 .individualpannel{
@@ -260,6 +269,24 @@ background-color: lightyellow;
 	box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
 	font-family:sans-serif;
 }
+
+.individualPanelContent{
+	display: inline-block;
+	vertical-align: top;
+	width: 0px;
+	height: 380px;
+	margin: 40px 0 40px 0;
+	overflow: hidden;
+	-webkit-transition:width 0.6s ease-out;
+	-moz-transition:width 0.6s ease-out;
+	-o-transition:width 0.6s ease-out;
+	transition:width 0.6s ease-out;
+}
+
+.individualPanelContent.expanded{
+	width: 640px;
+}
+
 
 .pannelHeader{
 	font-size: 20px;
@@ -280,6 +307,7 @@ background-color: lightyellow;
 	color:gray;
 	line-height: 20px;
 	text-align: left;
+	white-space: normal;
 }
 
 .color1{
@@ -335,17 +363,17 @@ background-color: lightyellow;
 	background-repeat: no-repeat;
 	background-position: center; 
 	bottom:20px;
-	right:0px;
+	right:20px;
 	border-radius: 50%;
 	width: 20px;
 	height: 20px;
 	position: absolute;
-	float: right;
 	padding: 20px;
-	margin-right: 30px;
 	color: white;
-	cursor: pointer;	
-
+	cursor: pointer;
+	-moz-user-select: none;
+ 	-webkit-user-select: none;
+  	-ms-user-select: none;
 }
 
 .circle_btn:hover{
