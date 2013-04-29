@@ -43,7 +43,12 @@
 			<textarea name="styled-textarea" id="styled" onfocus="this.value=''; setbg('#e5fff3');" onblur="setbg('white')" >Enter your RIT email...</textarea>
 			<div class="submit_button" id="join"> Join </div>
 			<div id="circle_menu"></div>
-
+      <script>
+        $('#styled').click(function ()
+        {
+            $(this).css('background-image', 'url(blurredBackground.png)');
+        });
+      </script>
 
 		</section>
 		
