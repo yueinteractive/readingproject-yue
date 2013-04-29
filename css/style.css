@@ -403,9 +403,15 @@ background-color: lightyellow;
 	padding: 20px;
 	color: white;
 	cursor: pointer;
+
 	-moz-user-select: none;
  	-webkit-user-select: none;
   -ms-user-select: none;
+
+  -webkit-transition:-webkit-transform 0.3s;
+	-moz-transition:-moz-transform 0.3s;
+	-o-transition:-o-transform 0.3s;
+	transition:transform 0.3s;
 }
 
 .circle_btn:hover{
@@ -415,11 +421,12 @@ background-color: lightyellow;
 
 .rotationArrow{
 	background-image: url("../images/arrow.png");
-  	-webkit-transform: rotate(90deg);     /* Chrome and other webkit browsers */
-  	-moz-transform: rotate(90deg);        /* FF */
-  	-o-transform: rotate(90deg);          /* Opera */
-  	-ms-transform: rotate(90deg);         /* IE9 */
- 	 transform: rotate(90deg);  
+
+	-webkit-transform: rotate(90deg);     /* Chrome and other webkit browsers */
+  -moz-transform: rotate(90deg);        /* FF */
+  -o-transform: rotate(90deg);          /* Opera */
+  -ms-transform: rotate(90deg);         /* IE9 */
+ 	transform: rotate(90deg);  
 }
 
 .circle_btn>p{
