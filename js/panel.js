@@ -20,12 +20,12 @@ panels.each(function(panelIndex, panel) {
 			if(!hasExpanded) {
 				$(panelContent).addClass('expanded');
 				panelOffsetX = - 400 * buttonIndex;
-				$(this).parent().prevAll().css('visibility', 'hidden');
-				$(this).parent().next().nextAll().css('visibility', 'hidden');
+				$(this).parent().prevAll().css('opacity', 0);
+				$(this).parent().next().nextAll().css('opacity', 0);
 			}else{
 				panelOffsetX = 0;
-				$(this).parent().prevAll().css('visibility', 'visible');
-				$(this).parent().next().nextAll().css('visibility', 'visible');
+				$(this).parent().prevAll().css('opacity', 1);
+				$(this).parent().next().nextAll().css('opacity', 1);
 			}
 
 			$(panelContainer).css('left', panelOffsetX + 'px');

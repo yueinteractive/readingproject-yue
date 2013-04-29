@@ -34,11 +34,7 @@ body{
 
 #top-menu.shortened{
 	height: 34px;
-	opacity: .95;
-}
-
-#top-menu.shortened #logo{
-	background-size: auto 60%;
+	opacity: .94;
 }
 
 #top-menu ul{
@@ -80,7 +76,7 @@ body{
 
 #logo{
 	background: url(../images/logo3.png) no-repeat center;
-	background-size: auto 86%;
+	background-size: auto 85%;
 	min-width: 100px;
 	width: 15%;
 	height: 100%;
@@ -291,6 +287,11 @@ background-color: lightyellow;
 	-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
 	box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
 	font-family:sans-serif;
+
+	-webkit-transition:opacity 0.6s;
+	-moz-transition:opacity 0.6s;
+	-o-transition:opacity 0.6s;
+	transition:opacity 0.6s;
 }
 
 .individualPanelContent{
@@ -300,10 +301,10 @@ background-color: lightyellow;
 	height: 380px;
 	margin: 40px 0 40px 0;
 	overflow: hidden;
-	-webkit-transition:width 0.6s ease-out;
-	-moz-transition:width 0.6s ease-out;
-	-o-transition:width 0.6s ease-out;
-	transition:width 0.6s ease-out;
+	-webkit-transition:width 0.6s ease-out, opacity 0.6s;
+	-moz-transition:width 0.6s ease-out, opacity 0.6s;
+	-o-transition:width 0.6s ease-out, opacity 0.6s;
+	transition:width 0.6s ease-out, opacity 0.6s;
 }
 
 .individualPanelContent.expanded{
