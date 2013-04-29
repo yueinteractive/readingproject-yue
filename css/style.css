@@ -6,69 +6,61 @@ body{
 }
 
 /* Style for navigation*/
-nav{
-	margin-left: 8%;
+#top-nav{
 	z-index: 1000;
 	position: fixed;
 	height: 68px;
 	width: 100%;
 	box-shadow: 0 0 50px rgba(0,0,0,0.3);
-	background-image: linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 79%);
-	background-image: -o-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 79%);
-	background-image: -moz-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 79%);
-	background-image: -webkit-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 79%);
-	background-image: -ms-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 79%);
+	background-image: linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(214,214,214) 0%, rgb(247,247,247) 100%);
 	font-family:sans-serif;
 	background-image: -webkit-gradient(
 		linear,
-		left bottom,
 		left top,
-		color-stop(0, rgb(214,214,214)),
-		color-stop(0.79, rgb(247,247,247))
+		left bottom,
+		color-stop(1.0, rgb(214,214,214)),
+		color-stop(0.0, rgb(247,247,247))
 	);
 }
 
-#adj{
-	margin-left: 250px;
-}
-nav ul{
-	margin-left: 400px;
-	text-align: center;;
+#top-nav ul{
+	text-align: center;
 }
 
-nav ul li{
-	float: left;
-	margin-left: 8%;
-	margin-top: 20px;
+#top-nav ul li{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 3% 0 3%;
+	padding: 2px 8px 2px 8px;
 	font-size: 16px;
 	text-transform: uppercase;
-	padding: 6px 6px 4px 6px;
 	cursor: pointer;
 	color: gray;
 	text-align: center;
 }
 
-nav ul li:hover{
+#top-nav ul li:hover{
 	background-color: #fea072;
 	color: white;
-	border-radius: 8px;
+	border-radius: 6px;
 }
 
 .active{
 	background-color: #fea072;
 	color: white;
-	border-radius: 8px;
+	border-radius: 6px;
 }
 
 #logo{
-	background: url(../images/logo3.png) no-repeat; 
+	background: url(../images/logo3.png) no-repeat -40px center; 
 	width: 160px;
-	height: 60px;
-	float: left;
-	left: 140px;
-	top: 3px;
-	position: fixed;
-	z-index: 1002;
+	height: 68px;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 /* Here are the main bock of every section*/
