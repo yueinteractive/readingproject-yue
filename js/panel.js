@@ -18,7 +18,7 @@ panels.each(function(panelIndex, panel) {
 
 			if(!hasExpanded) {
 				$(panelContent).addClass('expanded');
-				panelOffsetX = - 320 * buttonIndex;
+				panelOffsetX = - 400 * buttonIndex;
 			}else{
 				panelOffsetX = 0;
 			}
