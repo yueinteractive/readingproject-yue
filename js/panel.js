@@ -11,11 +11,17 @@ panels.each(function(panelIndex, panel) {
 		$(button).click(function(e) {
 			var panelContent = panelContents[buttonIndex];
 
+			var panelOffsetX = null;
+
 			var hasExpanded = $(panelContent).hasClass('expanded');
 			panelContents.removeClass('expanded');
-			if(!hasExpanded) $(panelContent).addClass('expanded');
 
-			var panelOffsetX = - 320 * buttonIndex;
+			if(!hasExpanded) {
+				$(panelContent).addClass('expanded');
+				panelOffsetX = - 320 * buttonIndex;
+			}else{
+				panelOffsetX = 0;
+			}
 
 			$(panelContainer).css('left', panelOffsetX + 'px');
 		});
