@@ -34,11 +34,7 @@ body{
 
 #top-menu.shortened{
 	height: 34px;
-	opacity: .95;
-}
-
-#top-menu.shortened #logo{
-	background-size: auto 60%;
+	opacity: .94;
 }
 
 #top-menu ul{
@@ -80,7 +76,7 @@ body{
 
 #logo{
 	background: url(../images/logo3.png) no-repeat center;
-	background-size: auto 86%;
+	background-size: auto 85%;
 	min-width: 100px;
 	width: 15%;
 	height: 100%;
@@ -329,12 +325,17 @@ background-color: lightyellow;
 	display: inline-block;
 	vertical-align: top;
 	position:relative;
-	border-top-left-radius: 5% 5%;
-	border-top-right-radius: 5% 5%;
+	border-top-left-radius: 36px;
+	border-top-right-radius: 36px;
 	-moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
 	-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
 	box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
 	font-family:sans-serif;
+
+	-webkit-transition:opacity 0.6s;
+	-moz-transition:opacity 0.6s;
+	-o-transition:opacity 0.6s;
+	transition:opacity 0.6s;
 }
 
 .individualPanelContent{
@@ -344,20 +345,22 @@ background-color: lightyellow;
 	height: 380px;
 	margin: 40px 0 40px 0;
 	overflow: hidden;
-	-webkit-transition:width 0.6s ease-out;
-	-moz-transition:width 0.6s ease-out;
-	-o-transition:width 0.6s ease-out;
-	transition:width 0.6s ease-out;
+
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+
+	-webkit-transition:width 0.6s ease-out, opacity 0.6s;
+	-moz-transition:width 0.6s ease-out, opacity 0.6s;
+	-o-transition:width 0.6s ease-out, opacity 0.6s;
+	transition:width 0.6s ease-out, opacity 0.6s;
+
 	box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
-	opacity: 0;
 }
 
 .individualPanelContent.expanded{
-	border-top-left-radius: 2% 4%;
-	border-top-right-radius: 2% 4%;
 	width: 800px;
 	margin-right: 50px;
-	opacity: 0.8;
+	opacity: 0.8 !important;
 }
 
 
@@ -367,8 +370,8 @@ background-color: lightyellow;
 	padding: 14px;
 	color: white;
 	overflow: hidden;
-	border-top-left-radius: 5% 26%;
-	border-top-right-radius: 5% 26%;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
 }
 
 .pannelHeader p{
@@ -444,9 +447,15 @@ background-color: lightyellow;
 	padding: 20px;
 	color: white;
 	cursor: pointer;
+
 	-moz-user-select: none;
  	-webkit-user-select: none;
-  	-ms-user-select: none;
+  -ms-user-select: none;
+
+  -webkit-transition:-webkit-transform 0.3s;
+	-moz-transition:-moz-transform 0.3s;
+	-o-transition:-o-transform 0.3s;
+	transition:transform 0.3s;
 }
 
 .circle_btn:hover{
@@ -456,11 +465,12 @@ background-color: lightyellow;
 
 .rotationArrow{
 	background-image: url("../images/arrow.png");
-  	-webkit-transform: rotate(90deg);     /* Chrome and other webkit browsers */
-  	-moz-transform: rotate(90deg);        /* FF */
-  	-o-transform: rotate(90deg);          /* Opera */
-  	-ms-transform: rotate(90deg);         /* IE9 */
- 	 transform: rotate(90deg);  
+
+	-webkit-transform: rotate(90deg);     /* Chrome and other webkit browsers */
+  -moz-transform: rotate(90deg);        /* FF */
+  -o-transform: rotate(90deg);          /* Opera */
+  -ms-transform: rotate(90deg);         /* IE9 */
+ 	transform: rotate(90deg);  
 }
 
 .circle_btn>p{
