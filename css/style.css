@@ -68,7 +68,8 @@ body{
 
 	/*option2:Curly Braces with dark text*/
 	color: black;
-	ackground: url(../images/brace2.png) no-repeat left;
+	ackground: url(../images/brace3.png) no-repeat left;
+	/*brace3.png didnt have a right brace*/
 	width: 100px;
 	height: 20px;
 	border-radius: 6px;
@@ -81,10 +82,9 @@ body{
 	color: white !important;
 	*/
 
-
 	/*option2:Curly Braces with dark text*/
 	color: black!important;
-	background: url(../images/brace2.png) no-repeat left;
+	background: url(../images/brace3.png) no-repeat left;
 	width: 100px;
 	height: 20px;
 	border-radius: 6px;
@@ -131,7 +131,7 @@ body{
 #do { 
 	background: url(../images/home.jpg) 100% 0 no-repeat fixed; 
 	height: 1000px;  
-	margin: 0 auto; 
+	margin: 140px auto; 
     width: 100%; 
     max-width: 1920px; 
     position: relative; 
@@ -186,7 +186,7 @@ body{
 	height: 458px; 
 	position: relative; 
 	text-indent: -9999px; 
-	top: 151px; 
+	top: 81px; 
 	left: 100px;
 	width: 100%; 
 
@@ -322,7 +322,7 @@ background-color: lightyellow;
 
 .panel{
 	overflow: hidden;
-	margin-top: -100px;
+	margin-top: -130px;
 }
 
 .panelContainer{
@@ -445,14 +445,6 @@ background-color: lightyellow;
 }
 
 
-#plan article.move{
-    top: -600px;
-    -webkit-transition:all .5s linear;
-    -moz-transition:all .5s linear;
-    -o-transition:all .5s linear;
-    -ms-transition:all .5s linear;    
-    transition:all .5s linear;
-}
 
 .circle_btn{
 	background-image: url("../images/arrow.png");
