@@ -459,7 +459,7 @@ background-color: lightyellow;
 }
 
 .circle_btn:hover{
-	background-color: #fea072;           /* W3C complaint browsers */
+	opacity: .7;           /* W3C complaint browsers */
 
 }
 
