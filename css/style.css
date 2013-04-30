@@ -5,11 +5,6 @@ body{
 	overflow: hidden;
 }
 
-section{
-	/*better turn this on in my office*/
-	/*display:none !important;*/
-}
-
 /* Style for navigation*/
 #top-menu{
 	z-index: 1000;
@@ -65,11 +60,6 @@ section{
 	text-transform: uppercase;
 	cursor: pointer;
 	color: gray;
-
-	-webkit-transition:color 0.2s ease-out;
-	-moz-transition:color 0.2s ease-out;
-	-o-transition:color 0.2s ease-out;
-	transition:color 0.2s ease-out;
 }
 
 #top-menu ul li a:hover{
@@ -78,6 +68,7 @@ section{
 
 	/*option2:Curly Braces with dark text*/
 	color: black;
+<<<<<<< HEAD
 <<<<<<< HEAD
 	ackground: url(../images/brace3.png) no-repeat left;
 	/*brace3.png didnt have a right brace*/
@@ -90,6 +81,12 @@ section{
 	/*height: 20px;*/
 	/*border-radius: 6px;*/
 >>>>>>> c2035f638805c3c6d8776316f5e54676e17c3c82
+=======
+	ackground: url(../images/brace2.png) no-repeat left;
+	width: 100px;
+	height: 20px;
+	border-radius: 6px;
+>>>>>>> parent of c2035f6... improved header hover effect :)
 }
 
 .active{
@@ -98,6 +95,7 @@ section{
 	background-color: #fea072;
 	color: white !important;
 	*/
+<<<<<<< HEAD
 }
 
 #top-menu ul li a>span{
@@ -135,16 +133,25 @@ section{
   -ms-transform: translate(-4px, 0px);         /* IE9 */
  	transform: translate(-4px, 0px);  
 }
+=======
+>>>>>>> parent of c2035f6... improved header hover effect :)
 
-#top-menu ul li a.active>span:last-child, #top-menu ul li a:hover>span:last-child{
-	opacity: 1 !important;
 
+<<<<<<< HEAD
 	-webkit-transform: translate(4px, 0px);     /* Chrome and other webkit browsers */
   -moz-transform: translate(4px, 0px);        /* FF */
   -o-transform: translate(4px, 0px);          /* Opera */
   -ms-transform: translate(4px, 0px);         /* IE9 */
  	transform: translate(4px, 0px); 
 >>>>>>> c2035f638805c3c6d8776316f5e54676e17c3c82
+=======
+	/*option2:Curly Braces with dark text*/
+	color: black!important;
+	background: url(../images/brace2.png) no-repeat left;
+	width: 100px;
+	height: 20px;
+	border-radius: 6px;
+>>>>>>> parent of c2035f6... improved header hover effect :)
 }
 
 #logo{
@@ -178,11 +185,11 @@ section{
 	background-color: #f7f7f7;
 	height: 1000px;
 	margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px; 
-  position: relative; 
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  opacity: 1!important;
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    opacity: 1!important;
 }
 
 #do { 
@@ -200,21 +207,21 @@ section{
 	background-color: #f7f7f7;
 	height: 1000px;  
 	margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px; 
-  position: relative; 
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  opacity: 1!important;
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    opacity: 1!important;
 }
 
 #feedback { 
 	background: url(../images/home.jpg) 100% 0 no-repeat fixed; 
 	height: 1000px;  
 	margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px; 
-  position: relative; 
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
 /* Introduction of certain parts */
