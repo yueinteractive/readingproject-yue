@@ -192,7 +192,51 @@ body{
 	text-indent: -9999px; 
 	top: 246px; width: 100%; 
 }
+#feedback figure { 
+	height: 48px; 	
+	position: relative; 
+	text-indent: -9999px; 
+	top: 58px; 
+	width: 1200px;
+	left: 1100px;
+}
 
+#facebook{
+	background: url("../images/socialMediaIcon/facebook.png") no-repeat scroll center top transparent; 
+	z-index: 1004;
+	height: 48px;
+	width:48px;
+	opacity: 0.3;
+}
+#twitter{
+	margin-top: 10px;
+	background: url("../images/socialMediaIcon/twitter.png") no-repeat scroll center top transparent; 
+	z-index: 1004;
+	height: 48px;
+	width:48px;
+	opacity: 0.3;
+}
+#googleplus{
+	margin-top: 10px;
+	background: url("../images/socialMediaIcon/google+.png") no-repeat scroll center top transparent; 
+	z-index: 1004;
+	height: 48px;
+	width:48px;
+	opacity: 0.3;
+}
+
+#sharethis{
+	margin-top: 10px;
+	background: url("../images/socialMediaIcon/google+.png") no-repeat scroll center top transparent; 
+	z-index: 1004;
+	height: 48px;
+	width:48px;
+	opacity: 0.3;
+}
+
+#facebook:hover,#twitter:hover,#googleplus:hover,#sharethis:hover{
+	opacity: 0.8;
+}
 
 textarea{
 	position: relative;
