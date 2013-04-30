@@ -125,6 +125,7 @@ body{
     max-width: 1920px; 
     position: relative; 
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    opacity: 1!important;
 }
 
 #do { 
@@ -139,12 +140,14 @@ body{
 
 #review { 
 	background: url(../images/reviewbg.png) 100% 10% no-repeat fixed; 
+	background-color: #f7f7f7;
 	height: 1000px;  
 	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
     position: relative; 
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    opacity: 1!important;
 }
 
 #feedback { 
@@ -186,6 +189,7 @@ body{
 	top: 151px; 
 	left: 100px;
 	width: 100%; 
+
 }
 
 #review article { 
