@@ -63,19 +63,35 @@ body{
 }
 
 #top-menu ul li a:hover{
-	background-color: #fea072;
-	color: white;
+	/*option1:orange background*/
+	/*background-color: #fea072;*/
+
+	/*option2:Curly Braces with dark text*/
+	color: black;
+	ackground: url(../images/brace2.png) no-repeat left;
+	width: 100px;
+	height: 20px;
 	border-radius: 6px;
 }
 
 .active{
+	/*option1:orange background*/
+	/*
 	background-color: #fea072;
 	color: white !important;
+	*/
+
+
+	/*option2:Curly Braces with dark text*/
+	color: black!important;
+	background: url(../images/brace2.png) no-repeat left;
+	width: 100px;
+	height: 20px;
 	border-radius: 6px;
 }
 
 #logo{
-	background: url(../images/logo3.png) no-repeat center;
+	background: url(../images/logo3.png) no-repeat left;
 	background-size: auto 85%;
 	min-width: 100px;
 	width: 15%;
