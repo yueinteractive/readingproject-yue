@@ -1,14 +1,10 @@
-  $("#styled").on('mouseenter',function(){
-    $('#home').addClass("enterTextArea",1000);
+
+  $("#input-field").focus(function(){
+    $('#pic > .blur').css("opacity",1);
   });
-  $("#styled").on('mouseleave',function(){
-    $('#home').removeClass("enterTextArea","slow");
+  $("#input-field").focusout(function(){
+    $('#pic > .blur').css("opacity",0);
   });
 
 
-  $("#styled2").on('mouseenter',function(){
-    $('#feedback').addClass("enterTextArea",1000);
-  });
-  $("#styled2").on('mouseleave',function(){
-    $('#feedback').removeClass("enterTextArea","slow");
-  });
+
