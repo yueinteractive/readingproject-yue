@@ -5,6 +5,11 @@ body{
 	overflow: hidden;
 }
 
+section{
+	/*better turn this on in my office*/
+	/*display:none !important;*/
+}
+
 /* Style for navigation*/
 #top-menu{
 	z-index: 1000;
@@ -60,6 +65,11 @@ body{
 	text-transform: uppercase;
 	cursor: pointer;
 	color: gray;
+
+	-webkit-transition:color 0.2s ease-out;
+	-moz-transition:color 0.2s ease-out;
+	-o-transition:color 0.2s ease-out;
+	transition:color 0.2s ease-out;
 }
 
 #top-menu ul li a:hover{
@@ -68,25 +78,10 @@ body{
 
 	/*option2:Curly Braces with dark text*/
 	color: black;
-<<<<<<< HEAD
-<<<<<<< HEAD
-	ackground: url(../images/brace3.png) no-repeat left;
-	/*brace3.png didnt have a right brace*/
-	width: 100px;
-	height: 20px;
-	border-radius: 6px;
-=======
 	/*background: url(../images/brace2.png) no-repeat left;*/
 	/*width: 100px;*/
 	/*height: 20px;*/
 	/*border-radius: 6px;*/
->>>>>>> c2035f638805c3c6d8776316f5e54676e17c3c82
-=======
-	ackground: url(../images/brace2.png) no-repeat left;
-	width: 100px;
-	height: 20px;
-	border-radius: 6px;
->>>>>>> parent of c2035f6... improved header hover effect :)
 }
 
 .active{
@@ -95,7 +90,6 @@ body{
 	background-color: #fea072;
 	color: white !important;
 	*/
-<<<<<<< HEAD
 }
 
 #top-menu ul li a>span{
@@ -106,14 +100,6 @@ body{
 	display: inline-block;
 	font-weight: lighter;
 
-<<<<<<< HEAD
-	/*option2:Curly Braces with dark text*/
-	color: black!important;
-	background: url(../images/brace3.png) no-repeat left;
-	width: 100px;
-	height: 20px;
-	border-radius: 6px;
-=======
 	-webkit-transition:all 0.2s ease-out;
 	-moz-transition:all 0.2s ease-out;
 	-o-transition:all 0.2s ease-out;
@@ -133,25 +119,15 @@ body{
   -ms-transform: translate(-4px, 0px);         /* IE9 */
  	transform: translate(-4px, 0px);  
 }
-=======
->>>>>>> parent of c2035f6... improved header hover effect :)
 
+#top-menu ul li a.active>span:last-child, #top-menu ul li a:hover>span:last-child{
+	opacity: 1 !important;
 
-<<<<<<< HEAD
 	-webkit-transform: translate(4px, 0px);     /* Chrome and other webkit browsers */
   -moz-transform: translate(4px, 0px);        /* FF */
   -o-transform: translate(4px, 0px);          /* Opera */
   -ms-transform: translate(4px, 0px);         /* IE9 */
  	transform: translate(4px, 0px); 
->>>>>>> c2035f638805c3c6d8776316f5e54676e17c3c82
-=======
-	/*option2:Curly Braces with dark text*/
-	color: black!important;
-	background: url(../images/brace2.png) no-repeat left;
-	width: 100px;
-	height: 20px;
-	border-radius: 6px;
->>>>>>> parent of c2035f6... improved header hover effect :)
 }
 
 #logo{
@@ -185,17 +161,17 @@ body{
 	background-color: #f7f7f7;
 	height: 1000px;
 	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    opacity: 1!important;
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  opacity: 1!important;
 }
 
 #do { 
 	background: url(../images/home.jpg) 100% 0 no-repeat fixed; 
 	height: 1000px;  
-	margin: 140px auto; 
+	margin: 0 auto; 
     width: 100%; 
     max-width: 1920px; 
     position: relative; 
@@ -207,21 +183,21 @@ body{
 	background-color: #f7f7f7;
 	height: 1000px;  
 	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    opacity: 1!important;
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  opacity: 1!important;
 }
 
 #feedback { 
 	background: url(../images/home.jpg) 100% 0 no-repeat fixed; 
 	height: 1000px;  
 	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
 /* Introduction of certain parts */
@@ -250,7 +226,7 @@ body{
 	height: 458px; 
 	position: relative; 
 	text-indent: -9999px; 
-	top: 81px; 
+	top: 151px; 
 	left: 100px;
 	width: 100%; 
 
@@ -335,6 +311,15 @@ textarea{
     /* reducing the opacity will also make the textarea text become transparent */
 }
 
+
+.enterTextArea {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+}
+
 #textarea2{
 	position: relative;
 	left: 20%;
@@ -386,7 +371,7 @@ background-color: lightyellow;
 
 .panel{
 	overflow: hidden;
-	margin-top: -130px;
+	margin-top: -100px;
 }
 
 .panelContainer{
@@ -509,6 +494,14 @@ background-color: lightyellow;
 }
 
 
+#plan article.move{
+    top: -600px;
+    -webkit-transition:all .5s linear;
+    -moz-transition:all .5s linear;
+    -o-transition:all .5s linear;
+    -ms-transition:all .5s linear;    
+    transition:all .5s linear;
+}
 
 .circle_btn{
 	background-image: url("../images/arrow.png");
