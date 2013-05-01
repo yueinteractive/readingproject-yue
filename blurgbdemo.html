@@ -18,6 +18,23 @@
     color: transparent;
     text-shadow:0px 0px 0px #000;
   }
+
+  #pic{
+    width: 300px;
+    height: 300px;
+  }
+
+  #pic >img{
+    position: absolute;
+  }
+
+  #pic >.blur{
+    opacity: 0;
+    -webkit-transition:opacity 0.2s ease-out;
+    -moz-transition:opacity 0.2s ease-out;
+    -o-transition:opacity 0.2s ease-out;
+    transition:opacity 0.2s ease-out;
+  }
   
   
 #lightbox{
@@ -86,16 +103,16 @@
   
   
 <div id="wrapper">
-  <div id="pic"><img src="http://placekitten.com/300" /></div>
+  <div id="pic">
+    <img src="images/demo/kitty-original.jpg"/>
+    <img class="blur" src="images/demo/kitty-blur.jpg"/>
+  </div>
 
   <h1>HI, I AM A LOVELY KITTY:)</h1>
   <p class="open">Get my name!</p>
-  <div id="sensor" > 
-  <textarea rows="4" cols="50">
-  Type in here. 
-  </textarea>
-  <div>
+  <textarea id="input-field" rows="4" cols="50">Type in here.</textarea>
 </div>
+
 <script>
   $('.open').click(function(){
     $('#lightbox').fadeTo(1000, 1);
@@ -103,11 +120,11 @@
     $('#pic').addClass("selected",1000);
   });
 
-  $("#sensor").on('mouseenter',function(){
-    $('#pic').addClass("enterTextArea",1000);
+  $("#input-field").focus(function(){
+    $('#pic > .blur').css("opacity",1);
   });
-  $("#sensor").on('mouseleave',function(){
-    $('#pic').removeClass("enterTextArea","slow");
+  $("#input-field").focusout(function(){
+    $('#pic > .blur').css("opacity",0);
   });
 
 
