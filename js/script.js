@@ -28,7 +28,7 @@ $(document).ready(function(){
 
 	// find each section with the data-type of "background"
 	// for each section found add this function
-   	$('section[data-type="background"]').each(function() {
+  $('[data-type="background"]').each(function() {
    	
    		// 1.Store the current section in a variabble
 		var $bgobj = $(this);
@@ -54,6 +54,9 @@ $(document).ready(function(){
 		
 		}); // window scroll Ends
  	});
+
+ 	// auto trigger scroll to update background positions when ready
+ 	$(window).trigger('scroll');
 }); 
 
 /* 

@@ -145,13 +145,13 @@ section{
 }
 
 /* Here are the main bock of every section*/
-#home { 
+#home {
+	position: relative;
 	height: 1000px;  
 	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  width: 100%; 
+  max-width: 1920px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
 
@@ -302,10 +302,15 @@ textarea{
 	font-family: Tahoma, sans-serif;
 	background-image: url(bg.gif);
 	background-repeat: no-repeat;
-	opacity: .40; 
+	opacity: .40;
+	resize: none;
 	/* Standard opacity property */
     filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* IE opacity property */
     /* reducing the opacity will also make the textarea text become transparent */
+}
+
+textarea:focus {
+  outline: none;
 }
 
 
@@ -551,3 +556,31 @@ p{
 	font-size: 10px;
 }
 
+/* fading background */
+.originalBackground, .blurBackground{
+	width: 100%;
+	height: 100%;
+	background-size: auto 150%;
+	background-repeat: no-repeat;
+  -webkit-transition:opacity 0.2s ease-out;
+  -moz-transition:opacity 0.2s ease-out;
+  -o-transition:opacity 0.2s ease-out;
+  transition:opacity 0.2s ease-out;
+}
+
+.originalBackground{
+	position: absolute;
+	opacity: 1;
+}
+
+.blurBackground{
+	opacity: 0;
+}
+
+#home > .originalBackground{
+	background-image: url('../images/pictureSets/home.png');
+}
+
+#home > .originalBackground > .blurBackground{
+	background-image: url('../images/pictureSets/homeBlur.png');
+}
