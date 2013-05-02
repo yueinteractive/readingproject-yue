@@ -38,13 +38,14 @@
 
 		<!-- Section #1 Home-->
 		<section id="home">
-      <div class="originalBackground" data-speed="4" data-type="background">
-        <div class="blurBackground" data-speed="4" data-type="background"></div>
+      <div class="originalBackground" data-speed="5" data-type="background">
+        <div class="blurBackground" data-speed="5" data-type="background"></div>
       </div>
       <article></article>
-			<textarea name="styled-textarea" id="styled" onfocus="this.value='';">Enter your RIT email...</textarea>
-			<div class="submit_button" id="join"> Join </div>
-			<div id="circle_menu"></div>
+      <div class="inputComponent">
+			 <textarea placeholder="Enter your RIT email..."></textarea>
+			 <div class="submitButton" id="join">Join</div>
+      </div>
 		</section>
 		
 		<!-- Section #2 Plan-->
@@ -262,9 +263,11 @@
 
 <!-- Section #5 Feedback-->
     <section id="feedback" data-speed="14" data-type="background">
-        <article></article>
-          <textarea id="textarea2" name="styled-textarea" id="styled" onfocus="this.value='';" >Do you want to talk？</textarea>
-      <div class="submit_button" id="submit"> Submit </div>
+      <article></article>
+      <div class="inputComponent">
+        <textarea placeholder="Do you want to talk?" ></textarea>
+        <div class="submitButton" id="submit"> Submit </div>
+      </div>
       <div id="circle_menu"></div>
       <ul id="socialIcon">
         <li id="facebook"></li>
