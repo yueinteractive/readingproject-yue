@@ -6,10 +6,10 @@
 <head>
 <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="js/greensock/TweenMax.min.js"></script>
-
+<script src="js/greensock/jquery.gsap.js"></script>
 
 <meta charset=utf-8 />
-<title>Play Around with Blur Effect</title>
+<title>Slideindemo</title>
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -105,12 +105,19 @@
 </div>
 
   
-  
+
 <div id="wrapper">
   <div id="pic">
     <img src="images/demo/kitty-original.jpg"/>
     <img class="blur" src="images/demo/kitty-blur.jpg"/>
   </div>
+
+  <script>
+   function init(){
+    var moveElement= document.getElementById("pic");
+    TweenMax.to(moveElement,1,{left:200})
+   }
+  </script>
 
   <h1>HI, I AM A LOVELY KITTY:)</h1>
   <p class="open">Get my name!</p>
