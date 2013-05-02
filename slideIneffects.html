@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+		
+		<title>HTML5 Example</title>
+		<script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+
+	</head>
+	<script>
+		function init(){
+			var r=document.getElementById("acat");
+			TweenMax.to(r,1,{width:250});
+		}
+	</script>
+
+	<body onload="init()">
+		
+		<img src="images/1.png" id="acat" />
+		
+	</body>
+
+</html>

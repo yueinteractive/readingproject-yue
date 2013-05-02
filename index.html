@@ -19,10 +19,55 @@
     <link rel="shortcut icon" href="../favicon.ico"> 
     <link rel="stylesheet" type="text/css" href="css/component2.css" />
 
+    <script>
+
+      function init() {
+        var b = document.getElementById("outerBox");
+        var xc = window.innerHeight - 200;
+        var yc = 600;
+        b.style.top = yc+"px";
+        b.style.left= -500+"px";
+        TweenMax.to(b,2,{css:{left:xc},ease:Expo.easeOut});
+      }
+
+    </script>
+
+    <style type="text/css">
+
+
+      #outerBox:hover {
+        opacity: 0.5;
+      }
+
+      #outerBox {
+        width: 200px;
+        height: 240px;
+        background-color: #F2F0F1;
+        position: absolute;
+        border-style:solid;
+        border-color:#F2F0F1;
+        opacity: 0.2;
+      }
+
+      #innerBox {
+        width: 160px;
+        height: 200px;
+        background-color:#F2F0F1;
+        padding: 10px;
+        margin:7px;
+        position: absolute;
+        border-style:solid;
+        border-color:#E7DBFF;
+      }
+
+      #innerBox>p{
+        color: black;
+      }
+    </style>
 
 	</head>
 
-	<body>
+	<body onload="init()">
 		<!-- Fixed Navigation Bar -->
 
 		<nav id="top-menu">
@@ -43,6 +88,13 @@
         </div>
       </div>
       <article></article>
+
+      <div id="outerBox">
+        <div id="innerBox">
+          <p>Join the recent reading competition!</p>
+        </div>
+      </div>
+
       <div class="inputComponent">
 			 <textarea placeholder="Enter your RIT email..."></textarea>
 			 <div class="submitButton" id="join">Join</div>

@@ -465,9 +465,9 @@ section{
 
 	-moz-user-select: none;
  	-webkit-user-select: none;
-  -ms-user-select: none;
+  	-ms-user-select: none;
 
-  -webkit-transition:-webkit-transform 0.3s;
+  	-webkit-transition:-webkit-transform 0.3s;
 	-moz-transition:-moz-transform 0.3s;
 	-o-transition:-o-transform 0.3s;
 	transition:transform 0.3s;
@@ -482,9 +482,9 @@ section{
 	background-image: url("../images/arrow.png");
 
 	-webkit-transform: rotate(90deg);     /* Chrome and other webkit browsers */
-  -moz-transform: rotate(90deg);        /* FF */
-  -o-transform: rotate(90deg);          /* Opera */
-  -ms-transform: rotate(90deg);         /* IE9 */
+  	-moz-transform: rotate(90deg);        /* FF */
+  	-o-transform: rotate(90deg);          /* Opera */
+  	-ms-transform: rotate(90deg);         /* IE9 */
  	transform: rotate(90deg);  
 }
 

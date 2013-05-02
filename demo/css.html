@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+		
+		<title>HTML5 Example</title>	
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+		<script type="text/javascript" src="../js/greensock/TweenMax.min.js"></script>
+
+		<script>
+
+			function init() {
+				var b = document.getElementById("outerBox");
+				var yc = window.innerWidth * 0.5 - 100;
+				var xc = window.innerHeight * 0.5 - 100;
+				b.style.top = yc+"px";
+				b.style.left= -500+"px";
+				TweenMax.to(b,1.5,{css:{left:xc},ease:Expo.easeOut});
+			}
+
+		</script>
+
+		<style type="text/css">
+			body{
+				margin:0;
+				padding:0;
+				font-family: 'Lato', Times, 'Times New Roman', serif;
+				overflow: hidden;
+			}
+			#outerBox {
+				width: 200px;
+				height: 240px;
+				background-color: #F2F0F1;
+				position: absolute;
+				border-style:solid;
+				border-color:#F2F0F1;
+			}
+
+			#innerBox {
+				width: 160px;
+				height: 200px;
+				background-color:#F2F0F1;
+				padding: 10px;
+				margin:7px;
+				position: absolute;
+				border-style:solid;
+				border-color:#E7DBFF;
+			}
+
+			#innerBox>p{
+				color: black;
+			}
+		</style>
+
+	</head>
+
+	<body onload="init()">
+		
+		<div id="outerBox">
+			<div id="innerBox">
+				<p>Join the recent reading competition!</p>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
