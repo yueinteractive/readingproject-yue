@@ -145,13 +145,12 @@ section{
 }
 
 /* Here are the main bock of every section*/
-#home { 
+#home {
+	position: relative;
 	height: 1000px;  
 	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  width: 100%; 
+  max-width: 1920px;
 }
 
 
@@ -163,7 +162,6 @@ section{
   	width: 100%; 
   	max-width: 1920px; 
   	position: relative; 
-  	box-shadow: 0 0 50px rgba(0,0,0,0.8);
   	opacity: 1!important;
 }
 
@@ -174,7 +172,6 @@ section{
     width: 100%; 
     max-width: 1920px; 
     position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
 #review { 
@@ -185,7 +182,6 @@ section{
   	width: 100%; 
   	max-width: 1920px; 
   	position: relative; 
-  	box-shadow: 0 0 50px rgba(0,0,0,0.8);
   	opacity: 1!important;
 }
 
@@ -196,18 +192,27 @@ section{
   	width: 100%; 
   	max-width: 1920px; 
   	position: relative; 
-  	box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
 /* Introduction of certain parts */
 
 #home article { 
 	background: url("../images/intro.png") no-repeat scroll center top transparent; 
-	height: 458px; 
-	position: absolute; 
-	text-indent: -9999px; 
-	margin-top: 491px; 
 	width: 100%;
+	height: 458px; 
+	position: relative;
+	top: 491px;
+}
+
+#home textarea{
+	width: 200px;
+	height: 20px;
+}
+
+#home .inputComponent{
+	width: 400px;
+	text-align: center;
+	margin: 0 auto;
 }
 
 
@@ -243,11 +248,12 @@ section{
 
 #feedback article { 
 	background: url("../images/feedbackText.png") no-repeat scroll center top transparent; 
-	height: 458px; 
 	position: relative; 
-	text-indent: -9999px; 
-	top: 246px; width: 100%; 
+	top: 246px;
+	width: 100%;
+	height: 200px;
 }
+
 #feedback figure { 
 	height: 48px; 	
 	position: relative; 
@@ -255,6 +261,28 @@ section{
 	top: 58px; 
 	width: 1200px;
 	left: 1100px;
+}
+
+#feedback .inputComponent{
+	position: relative;
+	top: 300px;
+	width: 500px;
+	margin: 0 auto;
+}
+
+#feedback .submitButton{
+	display: block;
+	width: 60px;
+	margin: 10px 10px 0 0;
+}
+
+#feedback textarea{
+	width: 100%;
+	height: 200px;
+	border: 3px solid #cccccc;
+	font-family: Tahoma, sans-serif;
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
 }
 
 #facebook{
@@ -289,81 +317,6 @@ section{
 }
 #socialIcon li:hover {
 	opacity: 0.8;
-}
-
-textarea{
-	position: relative;
-	left: 30%;
-	top: 150px;
-	width: 300px;
-	height: 20px;
-	border: 3px solid #cccccc;
-	padding: 5px;
-	font-family: Tahoma, sans-serif;
-	background-image: url(bg.gif);
-	background-repeat: no-repeat;
-	opacity: .40; 
-	/* Standard opacity property */
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* IE opacity property */
-    /* reducing the opacity will also make the textarea text become transparent */
-}
-
-
-.enterTextArea {
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-}
-
-#textarea2{
-	position: relative;
-	left: 18%;
-	top: 100px;
-	width: 500px;
-	height: 200px;
-	border: 3px solid #cccccc;
-	padding: 5px;
-	font-family: Tahoma, sans-serif;
-	background-image: url(bg.gif);
-	background-repeat: no-repeat;
-	opacity: .40; 
-	/* Standard opacity property */
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* IE opacity property */
-    /* reducing the opacity will also make the textarea text become transparent */
-}
-
-
-textarea:focus{
-background-color: lightyellow;
-}
-
-.submit_button{
-	float: left;
-	position: relative;
-	left: 64%;
-	top:150px;
-	color: red;
-	font-size: 18px;
-	background-color: white;
-	color: gray;
-	opacity: .10; 
-	padding: 6px 10px 4px 10px;
-	border-radius: 6px;
-	cursor: pointer;
-
-}
-
-.submit_button:hover{
-	background-color: #fea072;
-	opacity: 1;
-	color: white;
-	position: relative;;
-}
-#submit{
-  position: relative;
-  top: 100px
 }
 
 .panel{
@@ -551,3 +504,78 @@ p{
 	font-size: 10px;
 }
 
+/* fading background */
+.originalBackground, .blurBackground{
+	width: 100%;
+	height: 100%;
+	background-size: auto 120%;
+	background-repeat: no-repeat;
+  -webkit-transition:opacity 1s;
+  -moz-transition:opacity 1s;
+  -o-transition:opacity 1s;
+  transition:opacity 1s;
+}
+
+.originalBackground{
+	position: absolute;
+	opacity: 1;
+}
+
+.blurBackground{
+	opacity: 0;
+}
+
+#home > .originalBackground{
+	background-image: url('../images/pictureSets/home_resized.jpg');
+	background-position-x: center !important;
+}
+
+#home > .originalBackground > .blurBackground{
+	background-image: url('../images/pictureSets/home_blur_resized.jpg');
+	background-position-x: center !important;
+}
+
+/**/
+.inputComponent{
+	position: relative;
+}
+
+.inputComponent > textarea, .inputComponent > div{
+	display: inline-block;
+	vertical-align: top;
+}
+
+textarea{
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	opacity: .4;
+	resize: none;
+	-webkit-transition:opacity 0.2s ease-out;
+	-moz-transition:opacity 0.2s ease-out;
+	-o-transition:opacity 0.2s ease-out;
+	transition:opacity 0.2s ease-out;
+}
+
+textarea:focus {
+  outline: none;
+  background-color: white;
+  opacity: 1;
+}
+
+.submitButton{
+	font-size: 18px;
+	background-color: rgba(255, 255, 255, .1);
+	color: gray;
+	padding: 6px 10px 4px 10px;
+	border-radius: 6px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.submitButton:hover{
+	background-color: #fea072;
+	color: white;
+}
