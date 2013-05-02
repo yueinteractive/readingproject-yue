@@ -182,8 +182,8 @@ section{
   	opacity: 1!important;
 }
 
-#feedback { 
-	background: url(../images/home.jpg) 100% 0 no-repeat fixed; 
+#feedback {  
+	position: relative;
 	height: 1000px;  
 	margin: 0 auto; 
   	width: 100%; 
@@ -310,6 +310,7 @@ section{
 	height: 48px;
 	width: 48px;
 	opacity: 0.3;
+	cursor: pointer;
 }
 #socialIcon li:hover {
 	opacity: 0.8;
@@ -521,12 +522,12 @@ p{
 	opacity: 0;
 }
 
-#home > .originalBackground{
+#home > .originalBackground,#feedback > .originalBackground{
 	background-image: url('../images/pictureSets/home_resized.jpg');
 	background-position-x: center !important;
 }
 
-#home > .originalBackground > .blurBackground{
+#home > .originalBackground > .blurBackground, #feedback > .originalBackground > .blurBackground{
 	background-image: url('../images/pictureSets/home_blur_resized.jpg');
 	background-position-x: center !important;
 }
