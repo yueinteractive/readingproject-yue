@@ -99,7 +99,6 @@ section{
 	opacity: 0;
 	display: inline-block;
 	font-weight: lighter;
-
 	-webkit-transition:all 0.2s ease-out;
 	-moz-transition:all 0.2s ease-out;
 	-o-transition:all 0.2s ease-out;
@@ -112,21 +111,19 @@ section{
 
 #top-menu ul li a.active>span:first-child, #top-menu ul li a:hover>span:first-child{
 	opacity: 1 !important;
-
 	-webkit-transform: translate(-4px, 0px);     /* Chrome and other webkit browsers */
-  -moz-transform: translate(-4px, 0px);        /* FF */
-  -o-transform: translate(-4px, 0px);          /* Opera */
-  -ms-transform: translate(-4px, 0px);         /* IE9 */
- 	transform: translate(-4px, 0px);  
+    -moz-transform: translate(-4px, 0px);        /* FF */
+    -o-transform: translate(-4px, 0px);          /* Opera */
+    -ms-transform: translate(-4px, 0px);         /* IE9 */
+    transform: translate(-4px, 0px);  
 }
 
 #top-menu ul li a.active>span:last-child, #top-menu ul li a:hover>span:last-child{
 	opacity: 1 !important;
-
 	-webkit-transform: translate(4px, 0px);     /* Chrome and other webkit browsers */
-  -moz-transform: translate(4px, 0px);        /* FF */
-  -o-transform: translate(4px, 0px);          /* Opera */
-  -ms-transform: translate(4px, 0px);         /* IE9 */
+    -moz-transform: translate(4px, 0px);        /* FF */
+    -o-transform: translate(4px, 0px);          /* Opera */
+    -ms-transform: translate(4px, 0px);         /* IE9 */
  	transform: translate(4px, 0px); 
 }
 
@@ -149,8 +146,8 @@ section{
 	position: relative;
 	height: 1000px;  
 	margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px;
+    width: 100%; 
+    max-width: 1920px;
 }
 
 
@@ -201,7 +198,7 @@ section{
 	width: 100%;
 	height: 458px; 
 	position: relative;
-	top: 491px;
+	top: 230px;
 }
 
 #home textarea{
@@ -222,7 +219,7 @@ section{
 	position: relative; 
 	text-indent: -9999px; 
 	right: 10%;
-	top: 191px; 
+	top: 91px; 
 	width: 100%; 
 }
 
@@ -234,7 +231,6 @@ section{
 	top: 151px; 
 	left: 100px;
 	width: 100%; 
-
 }
 
 #review article { 
@@ -303,7 +299,7 @@ section{
 	position:relative;
 	float: left;
 	margin-left: 63%;
-	margin-top: 45px;
+	margin-top: -250px;
 	height: 48px;
 	width:348px;
 }
@@ -510,10 +506,10 @@ p{
 	height: 100%;
 	background-size: auto 120%;
 	background-repeat: no-repeat;
-  -webkit-transition:opacity 1s;
-  -moz-transition:opacity 1s;
-  -o-transition:opacity 1s;
-  transition:opacity 1s;
+  	-webkit-transition:opacity 1s;
+  	-moz-transition:opacity 1s;
+  	-o-transition:opacity 1s;
+  	transition:opacity 1s;
 }
 
 .originalBackground{
@@ -543,6 +539,7 @@ p{
 .inputComponent > textarea, .inputComponent > div{
 	display: inline-block;
 	vertical-align: top;
+	margin-left: 10px;
 }
 
 textarea{
