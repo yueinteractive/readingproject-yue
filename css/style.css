@@ -270,6 +270,8 @@ section{
 	display: block;
 	width: 60px;
 	margin: 10px 10px 0 0;
+	position: relative;
+	left: 10px;
 }
 
 #feedback textarea{
