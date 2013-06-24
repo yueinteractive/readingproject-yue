@@ -7,6 +7,9 @@ panels.each(function(panelIndex, panel) {
 	var panelContents = $(panel).find('.individualPanelContent');
 	var buttons = $(panel).find('.circle_btn');
 
+	//some pannel may have next page btn
+	var nextPage = $(panel).find('.circle_btn');
+
 	buttons.each(function(buttonIndex, button) {
 		$(button).click(function(e) {
 			var panelContent = panelContents[buttonIndex];
@@ -28,6 +31,7 @@ panels.each(function(panelIndex, panel) {
 				//The animation I just created isnt as fluent as expectation.. just mark here
 				//And I fixed it in the CSS
 				$(".circle_btn").addClass("rotationArrow");
+
 			}else{
 
 				panelOffsetX = 0;

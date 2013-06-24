@@ -151,6 +151,18 @@
     				</div>
 
             <div class="individualPanelContent color3">
+              <!-- Preparation graphic and text Start-->
+              <span>
+                <img src="images/table.jpg" alt="Smiley face" height="342" width=auto style="margin:20px;-moz-border-radius: 10px;border-radius: 10px;">
+
+                <p style="margin-top:-350px;margin-left:550px;color:white;font-size:16px;width:50px!important;">Before You Read</br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+                  <div class="circle_btn color4" style="position:relative;margin-left:730px;margin-top:250px">
+                  </div>
+              </span>
+              <!-- Preparation graphic and text End-->
+
             </div>
 
           </div>
@@ -164,6 +176,19 @@
     <section id="do" data-speed="2.4" data-type="background">
         <article></article>
       <div class="main">
+    <!-- Open External Links-->
+        <div id="linkExternalBooks" onclick="open()">
+              <p>Books Online</p>
+        </div>
+    <script>
+    function open(){ 
+    window.open("../Jun8_PopBook/index.html");
+    }
+    </script>
+
+
+    <!-- End Open External Links--> 
+
         <ul id="bk-list" class="bk-list clearfix">
           <li>
             <div class="bk-book book-1">
@@ -248,7 +273,13 @@
 
       });
     </script>
+
 		</section>
+
+
+
+
+
 		<!-- Section #4 Review-->
 		<section id="review" data-speed="7.2" data-type="background">
   			<article></article>
@@ -335,9 +366,14 @@
     </section>
 
     <!-- project js -->
+    <script>
+      var ritrd = ritrd || {};
+    </script>
     <script src="js/bgblur.js"></script>
     <script src="js/panel.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/FlipCard.js"></script>
+    <script src="js/main.js"></script>
     
     <script type="text/javascript">
       var _gaq = _gaq || [];

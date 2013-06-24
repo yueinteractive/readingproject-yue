@@ -414,6 +414,9 @@ section{
 .color3{
 	background-color: #53b2c9;
 }
+.color4{
+	background-color: white;
+}
 
 .moveLeft{
 	left: -1000px;
@@ -483,6 +486,15 @@ section{
 .rotationArrow{
 	background-image: url("../images/arrow.png");
 
+	-webkit-transform: rotate(90deg);     /* Chrome and other webkit browsers */
+  	-moz-transform: rotate(90deg);        /* FF */
+  	-o-transform: rotate(90deg);          /* Opera */
+  	-ms-transform: rotate(90deg);         /* IE9 */
+ 	transform: rotate(90deg);  
+}
+
+.rotationArrowBlue{
+	background-image: url("../images/arrowblue.png");
 	-webkit-transform: rotate(90deg);     /* Chrome and other webkit browsers */
   	-moz-transform: rotate(90deg);        /* FF */
   	-o-transform: rotate(90deg);          /* Opera */
@@ -563,6 +575,22 @@ textarea:focus {
   outline: none;
   background-color: white;
   opacity: 1;
+}
+
+
+#linkExternalBooks{
+	background-color: red;
+	width:100px;
+	height: 100px;
+	padding: 10px;
+}
+#linkExternalBooks:hover{
+	background-color: pink;
+	cursor: pointer;
+}
+
+linkExternalBooks>p{
+  font-size: 14px;
 }
 
 .submitButton{
