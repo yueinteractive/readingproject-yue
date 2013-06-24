@@ -1,0 +1,21 @@
+{namespace ritrd.templates}
+
+/**
+ * Flip Card
+ * @param frontHeading The title of the front card
+ * @param backHeading The title of the back card
+ * @param backBody The body text of the back card
+ */
+{template .flipCard}
+  <div class="flip-container">
+    <div class="flipper">
+      <div class="front">
+        <h4>{$frontHeading}</h4>
+      </div>
+      <div class="back">
+        <h4>{$backHeading}</h4>
+        <p>{$backBody}</p>
+      </div>
+    </div>
+  </div>
+{/template}

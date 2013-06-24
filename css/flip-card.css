@@ -1,0 +1,71 @@
+.flip-container {
+	display: inline-block;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 33.333%;
+	height: 45%;
+	/*outline: 1px solid red;*/
+	-webkit-perspective: 2500px;
+	-moz-perspective: 2500px;
+	perspective: 2500px;
+}
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.front, .back, .flipper {
+	width: 100%;
+	height: 100%;
+}
+.flipper {
+	position: relative;
+	-webkit-transition: 1s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transition: 1s;
+	-moz-transform-style: preserve-3d;
+	transition: 1s;
+	transform-style: preserve-3d;
+}
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.front {
+	text-align: center;
+	background-color: white;
+	z-index: 2;
+}
+.back {
+	text-align: left;
+	padding: 6%;
+	box-sizing: border-box;
+	background-color: #555;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.front h4{
+	position: relative;
+	top: 50%;
+	margin-top: -14px;
+	font-size: 20px;
+	color: #8ec041;
+	text-transform: capitalize;
+}
+.back h4{
+	text-transform: capitalize;
+	font-size: 14px;
+	color: white;
+}
+.back p{
+	margin-top: 8px;
+	font-size: 10px;
+	color: white;
+}

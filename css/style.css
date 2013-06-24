@@ -362,6 +362,7 @@ section{
 	height: 380px;
 	margin: 40px 0 40px 0;
 	overflow: hidden;
+	white-space: normal;
 
 	border-top-left-radius: 18px;
 	border-top-right-radius: 18px;
@@ -377,7 +378,7 @@ section{
 .individualPanelContent.expanded{
 	width: 800px;
 	margin-right: 50px;
-	opacity: 0.8 !important;
+	opacity: 1 !important;
 }
 
 
